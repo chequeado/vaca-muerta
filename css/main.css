@@ -1,0 +1,140 @@
+html,body{
+	height: 100%;
+	width: 100%;
+}
+#chequeado-map{
+	height: 100%;
+	width: 100%;
+}
+
+#button-container{
+	position: absolute;
+	z-index: 1000;
+	right: 20px;
+	top: 93px;
+}
+
+/** category visualization */
+
+#cv {
+   marker-fill-opacity: 0.9;
+   marker-line-color: #FFF;
+   marker-line-width: 1;
+   marker-line-opacity: 1;
+   marker-placement: point;
+   marker-type: ellipse;
+   marker-width: 10;
+   marker-allow-overlap: true;
+}
+
+#cv[tipo="shale gas"] {
+   marker-fill: #A6CEE3;
+}
+#cv[tipo="shale oil"] {
+   marker-fill: #0F3B82;
+}
+#cv[tipo="tight gas"] {
+   marker-fill: #7B00B4;
+}
+#cv[tipo="tight/shale gas"] {
+   marker-fill: #11002F;
+}
+
+
+/** bubble1 visualization */
+
+#b1{
+  marker-fill-opacity: 0.9;
+  marker-line-color: #FFF;
+  marker-line-width: 1;
+  marker-line-opacity: 1;
+  marker-placement: point;
+  marker-multi-policy: largest;
+  marker-type: ellipse;
+  marker-fill: #0F3B82;
+  marker-allow-overlap: true;
+  marker-clip: false;
+}
+#b1 [ inversiones_piloto_proyecto_us_millones <= 16506] {
+   marker-width: 25.0;
+}
+#b1 [ inversiones_piloto_proyecto_us_millones <= 13900] {
+   marker-width: 23.3;
+}
+#b1 [ inversiones_piloto_proyecto_us_millones <= 9813.5] {
+   marker-width: 21.7;
+}
+#b1 [ inversiones_piloto_proyecto_us_millones <= 7000] {
+   marker-width: 20.0;
+}
+#b1 [ inversiones_piloto_proyecto_us_millones <= 6223] {
+   marker-width: 18.3;
+}
+#b1 [ inversiones_piloto_proyecto_us_millones <= 4575] {
+   marker-width: 16.7;
+}
+#b1 [ inversiones_piloto_proyecto_us_millones <= 3507.5] {
+   marker-width: 15.0;
+}
+#b1 [ inversiones_piloto_proyecto_us_millones <= 2483] {
+   marker-width: 13.3;
+}
+#b1 [ inversiones_piloto_proyecto_us_millones <= 1460] {
+   marker-width: 11.7;
+}
+#b1 [ inversiones_piloto_proyecto_us_millones <= 638] {
+   marker-width: 10.0;
+}
+
+
+
+
+/** bubble2 visualization */
+
+#b2{
+  marker-fill-opacity: 0.9;
+  marker-line-color: #FFF;
+  marker-line-width: 1;
+  marker-line-opacity: 1;
+  marker-placement: point;
+  marker-multi-policy: largest;
+  marker-type: ellipse;
+  marker-fill: #0F3B82;
+  marker-allow-overlap: true;
+  marker-clip: false;
+}
+#b2 [ inversiones_total_proyecto_us_millones <= 16506] {
+   marker-width: 25.0;
+}
+#b2 [ inversiones_total_proyecto_us_millones <= 13900] {
+   marker-width: 23.3;
+}
+#b2 [ inversiones_total_proyecto_us_millones <= 9813.5] {
+   marker-width: 21.7;
+}
+#b2 [ inversiones_total_proyecto_us_millones <= 7000] {
+   marker-width: 20.0;
+}
+#b2 [ inversiones_total_proyecto_us_millones <= 6223] {
+   marker-width: 18.3;
+}
+#b2 [ inversiones_total_proyecto_us_millones <= 4575] {
+   marker-width: 16.7;
+}
+#b2 [ inversiones_total_proyecto_us_millones <= 3507.5] {
+   marker-width: 15.0;
+}
+#b2 [ inversiones_total_proyecto_us_millones <= 2483] {
+   marker-width: 13.3;
+}
+#b2 [ inversiones_total_proyecto_us_millones <= 1460] {
+   marker-width: 11.7;
+}
+#b2 [ inversiones_total_proyecto_us_millones <= 638] {
+   marker-width: 10.0;
+}
+
+
+
+
+
