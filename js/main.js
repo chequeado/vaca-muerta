@@ -47,6 +47,14 @@ var Chequeado;
             case "inversiones_totales":
                 selected = Chequeado.mainLayer.getSubLayer(1);
                 break;
+            /*
+            case "ambas":
+                selected = Chequeado.mainLayer.getSubLayer(0);
+                selected.show();
+                selected = Chequeado.mainLayer.getSubLayer(1);
+                selected.show()
+                break;
+            */
         }
 
         selected.show();
